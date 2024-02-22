@@ -32,7 +32,7 @@ Route::get('/about', function() {
     return '2141762096 - Karina Aulia Primanti Putri';
 });
 
-Route::get('/user/{name}', function ($name) {
+Route::get('/user/{name?}', function ($name='Karina') {
     return 'Nama Saya '.$name;
 });
 
